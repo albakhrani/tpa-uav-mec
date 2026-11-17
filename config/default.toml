@@ -1,0 +1,220 @@
+# tpa-uav-mec — single source of truth for every parameter.
+# Provenance tags in comments: [A] declared a priori, [T] tuned on validation seeds (start value),
+# [M] measured in calibration (provisional value until measured).
+# Nothing in tpa/ may contain a numeric literal that belongs here.
+
+[scenario]
+n_uav = 5                 # M [A]
+n_devices = 200           # N [A]
+n_zones = 6               # Z [A]
+area_side_m = 5000.0      # 5 x 5 km [A]
+hover_altitude_m = 100.0  # H [A]
+slot_s = 1.0              # delta_t [A]
+uav_grid_lo = 0.15        # UAV coverage grid, fraction of side [A]
+uav_grid_hi = 0.85
+zone_center_lo = 0.1      # zone centres ~ U(lo, hi) * side [A]
+zone_center_hi = 0.9
+device_cluster_frac = 0.8 # devices Gaussian around their zone centre [A]
+device_cluster_sigma_frac = 0.05
+
+[channel]
+bandwidth_hz = 10.0e6     # B [A]
+noise_psd_w_hz = 4.0e-21  # N0 [A]
+tx_power_w = [0.1, 1.0]   # P_i ~ U, per device, fixed per world [A]
+beta0 = 1.0e-4            # [A]
+path_loss_alpha = [2.5, 3.5]  # alpha ~ U, ONE per world [A]
+rician_kappa = [5.0, 15.0]    # kappa_ij ~ U, per link, fixed per world [A]
+psi_los = 1.0
+psi_nlos = 0.2
+los_a = 9.61
+los_b = 0.16
+omega_atten_per_m = 2.0e-4
+zeta0 = 1.0e-12
+zeta1 = 1.0e-13
+phi_jl = 0.1
+h_min = 1.0e-11
+h_min_rule = "from_r_min"   # h_min s.t. R(h_min, P_max, no interference) = R_min | "fixed" = h_min above
+interference_set = "slot_assigned"  # literal x_ij(t) = uploads assigned in slot t, rate fixed at assignment | "in_progress" (in-flight uploads)
+access = "fdma_per_uav"     # adopted (pre-registered fallback): per-UAV band, FDMA within a cell, cross-cell coupling via phi | "shared" = Eqs. 7-9 literal
+r_min_mbps = 0.1
+
+[uav]
+compute_ghz = [2.0, 5.0]  # F_max ~ U [A]
+eta = [0.8, 1.0]          # eta_j ~ U, time-invariant [A]
+battery_wh = [50.0, 100.0]
+e_min_frac = 0.1          # E_min = 0.1 E_j(0) [A]
+kappa_c = 1.0e-28         # Eq. 18 [A]
+kappa_m = 1.0e-9          # J per unit ||r||_1 [M] provisional
+mass_kg = 5.0             # hover / propulsion model (log only) [A]
+patrol_radius_m = 200.0   # patrol workload [A]
+patrol_speed_ms = 10.0
+downlink_frac = 0.1       # s_out = 0.1 s (log only) [A]
+downlink_power_w = 0.5    # P_U (log only) [A]
+abort_at_deadline = true  # in-flight tasks past T_max are aborted and their reservation freed
+
+[uav.zeng]                # Zeng et al. TWC 2019 rotary-wing constants (log only)
+delta = 0.012
+rho = 1.225
+s = 0.05
+omega_rad_s = 300.0
+radius_m = 0.4
+k_corr = 0.1
+d0 = 0.6
+n_rotors = 4
+g = 9.81
+
+[task]
+size_mb = [0.5, 5.0]
+mcycles = [10.0, 1000.0]
+deadline_s = [1.0, 10.0]
+priority = [0.0, 1.0]
+complexity = [0.5, 1.5]
+tx_overhead = 0.1         # varrho, Eq. 14 [A]
+q_max = 32                # actor window [A]
+queue_cap_factor = 4      # controller queue cap = 4 q_max [A]
+max_tx_attempts = 8       # pre-drawn packet-loss uniforms per task
+
+[workload]
+amplitude = 0.4           # A [A]
+period_slots = 3600       # P [A]
+zone_weight = [0.5, 2.0]  # omega_z ~ U [A]
+loads = [0.25, 0.55, 0.85]  # light / medium / heavy offered load [A]
+shift_rad = 1.0471975511965976   # pi/3, shifted family, second half of a test run
+burst_mult = 3.0          # burst family
+burst_frac = 0.10         # one burst per cycle, 10% of the cycle
+mmpp_p_stay = [0.98, 0.95]
+mmpp_mult = [0.4, 2.2]
+pareto_shape = 1.5
+pareto_mean_s = 300.0
+pareto_on_mult = 2.0
+gm_alpha = 0.85           # Gauss-Markov mobility
+gm_mean_speed = 1.5
+gm_sigma = 0.5
+packet_loss = 0.0         # {0, 0.05, 0.1} in robustness runs
+load_basis = "binding"    # adopted (pre-registered fallback): load = utilisation of the binding resource (radio) | "compute" = compute utilisation
+zone_ewm = 1.0            # long-run mean per-zone arrivals: >=1 = cumulative mean since segment/test-run start; no generator leakage
+trace_path = ""           # public-trace hook (Milan); empty = disabled
+
+[memory]
+d = 64
+k_short = 100
+k_long = 500
+n_heads = 8
+window_w = 100
+b_max = 101               # = w + 1 (non-binding)
+corr_lag = 8              # Delta in f_corr
+rho_merge = 0.95          # LT addressing: merge threshold = first grid point passing the three outcome-blind mechanism checks (incl. key structure) vs the key-shuffled control; fixed for every memory arm, not tuned
+lt_addressing = "fixed_key"  # compare candidates with each slot's first-write key | "content" (most-similar/LRU) | "soft" (softmax-weighted, soft_tau)
+candidate_repr = "layernorm"  # LT candidate z(t) contents: "tanh" | "layernorm" (default) | "novelty" (LN of W_z vec(P - P_ref)); pre-registered grid
+soft_tau = 0.1            # softmax temperature of the soft addressing weights
+key_centering = true      # LT keys k_t = z_t - mu_{t-1} (merge test + retrieval keys); false: keys = z, retrieval keys = contents
+key_mean_horizon_slots = 7200   # H_mu = 2P; alpha = 1/H_mu of the bias-corrected EMA mu_t over every slot with a candidate
+candidate_source = "zone"   # zone-resolved: z = repr(W_v v_t), v_t = [mean_window A/zone_mean ; uav_occupancy] | "pattern": z = repr(W_z vec(P))
+key_source = "arrivals"     # adopted: "arrivals" (k_t = a_t - mu_{t-1}, a_t = window mean of zone arrivals / long-run zone mean, R^Z; identical for every memory arm incl. A3 flat) | "candidate" (centred candidate keys)
+key_temperature = 0.1       # tau_key of the "arrivals" retrieval logits cos(k_t, K_j) / tau_key (one declared value, not tuned)
+eps = 1.0e-8              # epsilon guard
+m_max_flat = 176.366      # A3 flat-store Frobenius bound = sqrt(72^2 + 161^2) = 176.366
+theta_p = 0.35            # adopted (outcome-blind consolidation-gate criterion, pre-registered); fixed for every memory arm, not tuned
+sigma_max = 3.0           # sigma_p clip
+alpha_ref = 0.000277777777777777777   # 1/P
+m_max_s = 72.0            # 0.9 sqrt(K_S d)
+m_max_l = 161.0           # 0.9 sqrt(K_L d)
+delta_max = 1.0e9         # [M] set from preliminary A0 run (99th pct of ||dr||)
+a14_lo_frac = 0.25        # A14 displacement ~ U[P/4, 3P/4]
+a14_hi_frac = 0.75
+a14_redraw_slots = 60
+a14_snapshot_slots = 60
+hit_bins = 24
+hit_tol_bins = 1
+
+[learner]
+gamma = 0.95
+lr = 1.0e-3               # [T]
+batch = 64
+tau = 0.005
+replay = 100000
+alpha0 = 0.2
+target_entropy_scale = 0.5
+update_every = 4          # U [T]
+warmup_slots = 2000
+lambda_mem = 0.01
+norm_freeze_slots = 20000 # Eq. (34) normaliser: lo/hi frozen after this many observations
+norm_lo_pct = 1.0
+norm_hi_pct = 99.0
+grad_clip = 10.0
+recon_neighbors = "stored"  # r(t+1), r(t-1) from stored rollout values | "recompute" (rebuilt with current params)
+learn_device = "cpu"        # "cuda" = updates on GPU with a CPU rollout mirror (per-run override)
+log_std_min = -20.0
+log_std_max = 2.0
+actor_enc = [512, 256, 128]
+actor_mem = [128, 64]
+actor_head = [256, 128]
+task_enc = 64
+critic_state = [256, 128]
+critic_act = [128, 64]
+critic_mem = [64, 32]
+critic_q = [256, 128]
+lstm_burn_in = 20         # A10
+lstm_unroll = 40
+frame_stack = 8           # A11
+
+[objectives]
+beta_util = [0.5, 0.3, 0.2]   # beta_1..3, Eq. 31
+theta_mem = [0.5, 0.5]        # vartheta_S, vartheta_L, Eq. 33
+omega_p = 1.0
+w_base = [0.4, 0.2, 0.2, 0.2] # Eq. 59
+alpha_k = 0.1
+beta_k = 1.0
+ewm = 0.95
+
+[drm]
+alpha_t = 0.4
+alpha_m = 0.3
+alpha_d = 0.3
+beta_e = 0.3
+beta_r = 0.25
+beta_l = 0.2
+beta_a = 0.25
+beta_c = 0.0              # A13 sets [T] in {0.1, 0.25, 0.5}
+gamma_p = 0.3
+omega_l = 0.6
+eta_min = 0.6             # design target, logged only
+rate_ewm = 0.9833         # lambda_eff / mu EWM (~60 s)
+slot_raise_f = true       # ONE admission rule for DRM and baselines — raise earlier same-slot allocations within residuals (false: DRM refuses the candidate; the baseline executor does not read this key and still raises)
+impl = "fast"             # "fast" = vectorised feasibility, utility-ordered admission, row-restricted rate prediction; "reference" = the plain loop. Bit-identical decisions (tests/test_d8_equivalence.py)
+
+[burst]
+theta_b = 0.75            # [T]
+alpha_b = 1.0
+beta_b = 0.5
+rho_b = 0.25
+delta_e_w = 40.0
+t_max_slots = 120
+cooldown_slots = 120
+
+[run]
+episodes = 1000
+t_ep = 900
+segment_slots = 10800     # 3P memory segment
+test_runs = 3
+test_slots = 10800
+val_every_episodes = 50
+val_slots = 10800
+ckpt_every_episodes = 10
+test_seed_offset_slots = 10000000
+val_seeds = [9001, 9002, 9003, 9004, 9005, 9006]
+disk_budget_gb = 100.0
+disk_min_free_gb = 40.0
+timing_t_mem_ms = 0.0     # [M] per-arm measured values go into [t_mem_ms]
+
+[t_mem_ms]                # [M] filled by calibration; 0 until measured
+A0 = 0.0
+
+[baselines]               # control arms A10-A12 and restricted baselines
+ddpg_noise = 0.1          # B_HUANG exploration noise [A]
+es_pairs = 6              # B_SONG antithetic pairs per iteration [A]; 2 x 6 = 12 episodes = one 3P segment
+es_sigma = 0.02           # B_SONG [T]
+es_lr = 0.01              # B_SONG [T]
+lookup_ewm = 0.1          # A12 table EWM rate [T]
+lookup_f_scale = 1.0      # A12 allocation scale [T]
+lstm_hidden = 64          # A10 width (must stay within +-5% of A0 params) [T]
