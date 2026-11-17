@@ -1,0 +1,2 @@
+# Keep every file byte for byte: the code hash covers raw bytes, line endings included.
+* -text

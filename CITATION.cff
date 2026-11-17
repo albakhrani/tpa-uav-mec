@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+type: software
+title: "TPA-UAV-MEC: Time-Scale Separation in Memory-Enhanced Deep Reinforcement Learning for UAV-Assisted Mobile Edge Computing"
+authors:
+  - family-names: "AL-Bakhrani"
+    given-names: "Ali A."
+  - family-names: "Xu"
+    given-names: "Zichuan"
+  - family-names: "Obaidat"
+    given-names: "Mohammad S."
+  - family-names: "Li"
+    given-names: "Mingchu"
+  - family-names: "Xia"
+    given-names: "Qiufen"
+  - family-names: "Li"
+    given-names: "Zhongwei"
+  - family-names: "Feng"
+    given-names: "Zhen"
+license: MIT
+preferred-citation:
+  type: article
+  title: "TPA-UAV-MEC: Time-Scale Separation in Memory-Enhanced Deep Reinforcement Learning for UAV-Assisted Mobile Edge Computing"
+  authors:
+    - family-names: "AL-Bakhrani"
+      given-names: "Ali A."
+    - family-names: "Xu"
+      given-names: "Zichuan"
+    - family-names: "Obaidat"
+      given-names: "Mohammad S."
+    - family-names: "Li"
+      given-names: "Mingchu"
+    - family-names: "Xia"
+      given-names: "Qiufen"
+    - family-names: "Li"
+      given-names: "Zhongwei"
+    - family-names: "Feng"
+      given-names: "Zhen"

@@ -1,0 +1,29 @@
+# Python caches (compiled files record local paths)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Run outputs written by the scripts (the inputs runs/d3/adopted.json, runs/tune/configs.json and
+# runs/tune/selected.json are tracked)
+runs/*.db
+runs/*.db-wal
+runs/*.db-shm
+runs/*.db-journal
+runs/*.tmp
+runs/*.json
+runs/*/
+!runs/d3/
+!runs/tune/
+runs/tune/*/
+runs/tune/*.db
+runs/tune/stage1_scores*.json
+/TUNING_RESULT.md
+
+# Figures written by the commands of README.md (figures/out/) and by figures/src/build_results_figs.sh
+figures/out/
+figures/*.pdf
+figures/rehearsal/
+
+# Figures that scripts/analyze_campaign.py writes next to its tables (not part of this repository)
+results/*/*.png
