@@ -1,0 +1,20 @@
+{
+ "candidate": "5: 25 UAVs + size 0.5-2.5 + deadline 3-10",
+ "overrides": {
+  "scenario.n_uav": 25,
+  "task.size_mb": [
+   0.5,
+   2.5
+  ],
+  "task.deadline_s": [
+   3.0,
+   10.0
+  ],
+  "workload.loads": [
+   0.17,
+   0.374,
+   0.578
+  ]
+ },
+ "lambda_star_load": 0.68
+}
