@@ -1,0 +1,90 @@
+{
+ "p10_computable": false,
+ "p10_statement": "P10 cannot be computed from the records (no per-slot gate decision and no MMPP state are written); it is not evaluated. The open fraction by load below is descriptive only.",
+ "b_computable": false,
+ "b_reason": "the test records hold no per-slot gate decision (only the per-minute share cons_rate, tpa/run/metrics.py) and no MMPP state (tpa/run/evaluator.py writes run and minute rows only); the MMPP state is policy-independent and could be regenerated from (seed, block, test run), but it is not in the records",
+ "base_share_within_w": 0.9999991964770668,
+ "base_share_note": "stationary share of slots within w = 100 slots after a level change of any zone for mmpp_p_stay = [0.98, 0.95], Z = 6: the frozen ratio is ~1 whatever the gate does, so it could not discriminate even with per-slot records; on a finite run it is about N / (N - c1 - 1) ~ 1.0007 > 1 for ANY gate (the slots before the first level change lie in the warm-up, where the gate cannot open), i.e. biased toward confirming P10",
+ "by_arm": {
+  "A0": {
+   "by_load": {
+    "light": {
+     "open_fraction": {
+      "n": 6,
+      "mean": 0.6635185185185185,
+      "ci95": 0.022886143641623176
+     },
+     "open_fraction_postwarmup": {
+      "n": 6,
+      "mean": 0.6697196261682242,
+      "ci95": 0.02310003283453554
+     }
+    },
+    "medium": {
+     "open_fraction": {
+      "n": 6,
+      "mean": 0.656687242798354,
+      "ci95": 0.017906264708562186
+     },
+     "open_fraction_postwarmup": {
+      "n": 6,
+      "mean": 0.6628245067497404,
+      "ci95": 0.01807361297686648
+     }
+    },
+    "heavy": {
+     "open_fraction": {
+      "n": 6,
+      "mean": 0.6523765432098766,
+      "ci95": 0.021220154816581797
+     },
+     "open_fraction_postwarmup": {
+      "n": 6,
+      "mean": 0.6584735202492212,
+      "ci95": 0.02141847402047508
+     }
+    }
+   }
+  },
+  "A3": {
+   "by_load": {
+    "light": {
+     "open_fraction": {
+      "n": 6,
+      "mean": 0.7062037037037037,
+      "ci95": 0.050919431969797695
+     },
+     "open_fraction_postwarmup": {
+      "n": 6,
+      "mean": 0.7128037383177571,
+      "ci95": 0.05139531451157151
+     }
+    },
+    "medium": {
+     "open_fraction": {
+      "n": 6,
+      "mean": 0.6984053497942386,
+      "ci95": 0.05289133315522025
+     },
+     "open_fraction_postwarmup": {
+      "n": 6,
+      "mean": 0.704932502596054,
+      "ci95": 0.05338564468003535
+     }
+    },
+    "heavy": {
+     "open_fraction": {
+      "n": 6,
+      "mean": 0.6947736625514404,
+      "ci95": 0.05454118929652193
+     },
+     "open_fraction_postwarmup": {
+      "n": 6,
+      "mean": 0.7012668743509866,
+      "ci95": 0.05505092003761096
+     }
+    }
+   }
+  }
+ }
+}

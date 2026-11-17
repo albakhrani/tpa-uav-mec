@@ -1,0 +1,576 @@
+{
+ "utc": "2026-11-13T09:45:20+00:00",
+ "tag": "phase robust, block test",
+ "phase": "robust",
+ "block": "test",
+ "rows": 72,
+ "done": 72,
+ "failed": [],
+ "stopped": [],
+ "missing_tables": [],
+ "loads": [
+  0.17,
+  0.374,
+  0.578
+ ],
+ "workloads": [
+  "mmpp",
+  "pareto",
+  "sinusoidal|mobility=gauss_markov"
+ ],
+ "n_by_arm": {
+  "A0": 6,
+  "A10": 6,
+  "A3": 6,
+  "A9": 6
+ },
+ "contrasts": [
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.19295755412439966,
+   "mean_b": 0.19507136362866437,
+   "mean_diff": -0.0021138095042646915,
+   "sd_diff": 0.006697484330556467,
+   "se": 0.002734236528358188,
+   "ci": [
+    -0.009142388258395548,
+    0.004914769249866164
+   ],
+   "t": -0.7730894830572537,
+   "p": 0.4744119184085274,
+   "cohen_d_pooled": -0.031310753718207365,
+   "d_z": -0.31561245983371544,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A3",
+   "workload": "mmpp",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:mmpp",
+   "label": "A0 - A3, heavy, mmpp",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.017208683050200145,
+    "p_upper": 0.0034127133413035843,
+    "p_tost": 0.017208683050200145,
+    "equivalent": true
+   },
+   "normality": {
+    "shapiro_p": 0.07210556600164525,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 0.9542828947489898,
+   "p_holm": 0.4744119184085274
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.19295755412439966,
+   "mean_b": 0.20050363052970185,
+   "mean_diff": -0.00754607640530217,
+   "sd_diff": 0.006809622163221796,
+   "se": 0.0027800166068401313,
+   "ci": [
+    -0.014692336597612713,
+    -0.0003998162129916268
+   ],
+   "t": -2.714399758165228,
+   "p": 0.04205484145184099,
+   "cohen_d_pooled": -0.11315914920130456,
+   "d_z": -1.1081490609064777,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A9",
+   "workload": "mmpp",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:mmpp",
+   "label": "A0 - A9, heavy, mmpp",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.20890465148763018,
+    "p_upper": 0.0007351263739287905,
+    "p_tost": 0.20890465148763018,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.3280817112214567,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 0.9702607172096595,
+   "p_holm": 0.08410968290368198
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.19295755412439966,
+   "mean_b": 0.2105097379254419,
+   "mean_diff": -0.017552183801042204,
+   "sd_diff": 0.011410125555923762,
+   "se": 0.004658164252183911,
+   "ci": [
+    -0.029526376215116584,
+    -0.005577991386967825
+   ],
+   "t": -3.7680474218600435,
+   "p": 0.013049078810186864,
+   "cohen_d_pooled": -0.24725659137632203,
+   "d_z": -1.5382989183611295,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A10",
+   "workload": "mmpp",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:mmpp",
+   "label": "A0 - A10, heavy, mmpp",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.917057892960955,
+    "p_upper": 0.0009839742134432237,
+    "p_tost": 0.917057892960955,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.7998336808838187,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 1.6257578379510256,
+   "p_holm": 0.03914723643056059
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.16183379757583286,
+   "mean_b": 0.15801576001320655,
+   "mean_diff": 0.003818037562626296,
+   "sd_diff": 0.004362807504141001,
+   "se": 0.0017811087051884768,
+   "ci": [
+    -0.0007604481222249181,
+    0.00839652324747751
+   ],
+   "t": 2.1436297242858466,
+   "p": 0.08492645920190674,
+   "cohen_d_pooled": 0.08299436918045297,
+   "d_z": 0.8751331703272189,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A3",
+   "workload": "pareto",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:pareto",
+   "label": "A0 - A3, heavy, pareto",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.00028453344951292597,
+    "p_upper": 0.00891652606201804,
+    "p_tost": 0.00891652606201804,
+    "equivalent": true
+   },
+   "normality": {
+    "shapiro_p": 0.2743297282213024,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 0.6216293116640071,
+   "p_holm": 0.08492645920190674
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.16183379757583286,
+   "mean_b": 0.175470148258807,
+   "mean_diff": -0.013636350682974132,
+   "sd_diff": 0.007729076412251434,
+   "se": 0.003155382232166216,
+   "ci": [
+    -0.021747518933470177,
+    -0.00552518243247809
+   ],
+   "t": -4.32161610849047,
+   "p": 0.0075590400167057864,
+   "cohen_d_pooled": -0.27668402123140634,
+   "d_z": -1.7642923883323265,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A9",
+   "workload": "pareto",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:pareto",
+   "label": "A0 - A9, heavy, pareto",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.8493758332517678,
+    "p_upper": 0.0003350319992816429,
+    "p_tost": 0.8493758332517678,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.5634497859210789,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 1.1012680356366906,
+   "p_holm": 0.02267712005011736
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.16183379757583286,
+   "mean_b": 0.18576786349455754,
+   "mean_diff": -0.023934065918724684,
+   "sd_diff": 0.01667187825630789,
+   "se": 0.0068062657969593455,
+   "ci": [
+    -0.0414301291449011,
+    -0.006438002692548267
+   ],
+   "t": -3.516475352669458,
+   "p": 0.016982856244569362,
+   "cohen_d_pooled": -0.4501899070690012,
+   "d_z": -1.4355950511856161,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A10",
+   "workload": "pareto",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:pareto",
+   "label": "A0 - A10, heavy, pareto",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.9520102712149228,
+    "p_upper": 0.002077652595750757,
+    "p_tost": 0.9520102712149228,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.3436326187150021,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 2.375472260643626,
+   "p_holm": 0.033965712489138725
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.21873228946096615,
+   "mean_b": 0.22421077436288184,
+   "mean_diff": -0.005478484901915684,
+   "sd_diff": 0.007022679241004261,
+   "se": 0.002866996794616049,
+   "ci": [
+    -0.012848334784983238,
+    0.0018913649811518685
+   ],
+   "t": -1.910879325782214,
+   "p": 0.11425731993029181,
+   "cohen_d_pooled": -0.0629642744205151,
+   "d_z": -0.7801132180333281,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A3",
+   "workload": "sinusoidal|mobility=gauss_markov",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:sinusoidal|mobility=gauss_markov",
+   "label": "A0 - A3, heavy, sinusoidal|mobility=gauss_markov",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.08780034820928138,
+    "p_upper": 0.0014725036094699689,
+    "p_tost": 0.08780034820928138,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.4407559478620141,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 1.0006178953527127,
+   "p_holm": 0.11425731993029181
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.21873228946096615,
+   "mean_b": 0.23427842850455263,
+   "mean_diff": -0.015546139043586512,
+   "sd_diff": 0.010414984725849818,
+   "se": 0.004251899709535434,
+   "ci": [
+    -0.02647599520386562,
+    -0.004616282883307404
+   ],
+   "t": -3.6562807463972606,
+   "p": 0.014651733157474159,
+   "cohen_d_pooled": -0.16826528708640107,
+   "d_z": -1.492670364172619,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A9",
+   "workload": "sinusoidal|mobility=gauss_markov",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:sinusoidal|mobility=gauss_markov",
+   "label": "A0 - A9, heavy, sinusoidal|mobility=gauss_markov",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.8755437501750349,
+    "p_upper": 0.0009174639264682449,
+    "p_tost": 0.8755437501750349,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.28105073618892285,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 1.4839664092390195,
+   "p_holm": 0.029303466314948318
+  },
+  {
+   "n": 6,
+   "n_dropped": 0,
+   "df": 5,
+   "alpha": 0.05,
+   "mean_a": 0.21873228946096615,
+   "mean_b": 0.23268066890104358,
+   "mean_diff": -0.013948379440077431,
+   "sd_diff": 0.006934443324672465,
+   "se": 0.002830974632616081,
+   "ci": [
+    -0.021225631407827517,
+    -0.0066711274723273446
+   ],
+   "t": -4.927059140472709,
+   "p": 0.004370707997129238,
+   "cohen_d_pooled": -0.15397617148966503,
+   "d_z": -2.011463471112334,
+   "metric": "completion",
+   "arm_a": "A0",
+   "arm_b": "A10",
+   "workload": "sinusoidal|mobility=gauss_markov",
+   "load": 0.578,
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "unpaired_seeds": [],
+   "family": "R:sinusoidal|mobility=gauss_markov",
+   "label": "A0 - A10, heavy, sinusoidal|mobility=gauss_markov",
+   "tost": {
+    "n": 6,
+    "p_lower": 0.8890507076282248,
+    "p_upper": 0.0001895192876138665,
+    "p_tost": 0.8890507076282248,
+    "equivalent": false
+   },
+   "normality": {
+    "shapiro_p": 0.1612860420735247,
+    "wilcoxon_p": NaN,
+    "note": ""
+   },
+   "mde_pp": 0.9880457083191765,
+   "p_holm": 0.013112123991387715
+  }
+ ],
+ "interaction": null,
+ "figures": [
+  "fig_forest_R_mmpp.png",
+  "fig_forest_R_pareto.png",
+  "fig_forest_R_sinusoidal_mobility-gauss_markov.png",
+  "fig_completion_vs_load.png",
+  "fig_minute_series_heavy.png"
+ ],
+ "code_hashes": [
+  "2892281e5ba9"
+ ],
+ "tier_c": [],
+ "exploratory": [],
+ "p10": {
+  "p10_computable": false,
+  "p10_statement": "P10 cannot be computed from the records (no per-slot gate decision and no MMPP state are written); it is not evaluated. The open fraction by load below is descriptive only.",
+  "b_computable": false,
+  "b_reason": "the test records hold no per-slot gate decision (only the per-minute share cons_rate, tpa/run/metrics.py) and no MMPP state (tpa/run/evaluator.py writes run and minute rows only); the MMPP state is policy-independent and could be regenerated from (seed, block, test run), but it is not in the records",
+  "base_share_within_w": 0.9999991964770668,
+  "base_share_note": "stationary share of slots within w = 100 slots after a level change of any zone for mmpp_p_stay = [0.98, 0.95], Z = 6: the frozen ratio is ~1 whatever the gate does, so it could not discriminate even with per-slot records; on a finite run it is about N / (N - c1 - 1) ~ 1.0007 > 1 for ANY gate (the slots before the first level change lie in the warm-up, where the gate cannot open), i.e. biased toward confirming P10",
+  "by_arm": {
+   "A0": {
+    "by_load": {
+     "light": {
+      "open_fraction": {
+       "n": 6,
+       "mean": 0.6635185185185185,
+       "ci95": 0.022886143641623176
+      },
+      "open_fraction_postwarmup": {
+       "n": 6,
+       "mean": 0.6697196261682242,
+       "ci95": 0.02310003283453554
+      }
+     },
+     "medium": {
+      "open_fraction": {
+       "n": 6,
+       "mean": 0.656687242798354,
+       "ci95": 0.017906264708562186
+      },
+      "open_fraction_postwarmup": {
+       "n": 6,
+       "mean": 0.6628245067497404,
+       "ci95": 0.01807361297686648
+      }
+     },
+     "heavy": {
+      "open_fraction": {
+       "n": 6,
+       "mean": 0.6523765432098766,
+       "ci95": 0.021220154816581797
+      },
+      "open_fraction_postwarmup": {
+       "n": 6,
+       "mean": 0.6584735202492212,
+       "ci95": 0.02141847402047508
+      }
+     }
+    }
+   },
+   "A3": {
+    "by_load": {
+     "light": {
+      "open_fraction": {
+       "n": 6,
+       "mean": 0.7062037037037037,
+       "ci95": 0.050919431969797695
+      },
+      "open_fraction_postwarmup": {
+       "n": 6,
+       "mean": 0.7128037383177571,
+       "ci95": 0.05139531451157151
+      }
+     },
+     "medium": {
+      "open_fraction": {
+       "n": 6,
+       "mean": 0.6984053497942386,
+       "ci95": 0.05289133315522025
+      },
+      "open_fraction_postwarmup": {
+       "n": 6,
+       "mean": 0.704932502596054,
+       "ci95": 0.05338564468003535
+      }
+     },
+     "heavy": {
+      "open_fraction": {
+       "n": 6,
+       "mean": 0.6947736625514404,
+       "ci95": 0.05454118929652193
+      },
+      "open_fraction_postwarmup": {
+       "n": 6,
+       "mean": 0.7012668743509866,
+       "ci95": 0.05505092003761096
+      }
+     }
+    }
+   }
+  }
+ },
+ "b1": null,
+ "b1_not_read": false,
+ "partA": null
+}
