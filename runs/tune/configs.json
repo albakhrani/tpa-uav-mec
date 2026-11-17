@@ -1,0 +1,1390 @@
+{
+ "A0": [
+  {
+   "learner.lr": 0.00123,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000471,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00051,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00045,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00239,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000572,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.0003,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00246,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000337,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00285,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000444,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000483,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  }
+ ],
+ "A1": [
+  {
+   "learner.lr": 0.00133,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00205,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00125,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00282,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00155,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00188,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000823,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000471,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000601,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000886,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00135,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00231,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  }
+ ],
+ "A2": [
+  {
+   "learner.lr": 0.000702,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000764,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00196,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00164,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00234,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000586,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00077,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00139,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000464,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000482,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000578,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00085,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  }
+ ],
+ "A3": [
+  {
+   "learner.lr": 0.00122,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000393,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000585,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000734,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000776,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000393,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00112,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00209,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000302,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00123,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000423,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00104,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  }
+ ],
+ "A4": [
+  {
+   "learner.lr": 0.00169,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00253,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000474,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00125,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000823,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000947,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000308,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000738,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00164,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00225,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000551,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000504,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  }
+ ],
+ "A5": [
+  {
+   "learner.lr": 0.00298,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000589,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00107,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000916,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000356,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000507,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00185,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000662,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00198,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00146,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000651,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000336,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  }
+ ],
+ "A6": [
+  {
+   "learner.lr": 0.000575,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000498,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00111,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000811,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00153,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000989,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00238,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000402,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00147,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00169,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000678,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.0012,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  }
+ ],
+ "A7": [
+  {
+   "learner.lr": 0.00205,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00232,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00175,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000527,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000587,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00125,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000599,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000304,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00108,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00148,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00208,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000785,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  }
+ ],
+ "A8": [
+  {
+   "learner.lr": 0.000876,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0
+  },
+  {
+   "learner.lr": 0.00191,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0
+  },
+  {
+   "learner.lr": 0.00188,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25
+  },
+  {
+   "learner.lr": 0.000976,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5
+  },
+  {
+   "learner.lr": 0.00178,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5
+  },
+  {
+   "learner.lr": 0.0028,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25
+  },
+  {
+   "learner.lr": 0.00234,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0
+  },
+  {
+   "learner.lr": 0.0022,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25
+  },
+  {
+   "learner.lr": 0.000472,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0
+  },
+  {
+   "learner.lr": 0.00153,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25
+  },
+  {
+   "learner.lr": 0.00292,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25
+  },
+  {
+   "learner.lr": 0.00131,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25
+  }
+ ],
+ "A9": [
+  {
+   "learner.lr": 0.0014,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000368,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000354,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000383,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000312,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000631,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000882,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000457,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000398,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000767,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000351,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00164,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  }
+ ],
+ "A10": [
+  {
+   "learner.lr": 0.000841,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6,
+   "baselines.lstm_hidden": 80
+  },
+  {
+   "learner.lr": 0.00259,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75,
+   "baselines.lstm_hidden": 80
+  },
+  {
+   "learner.lr": 0.00141,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75,
+   "baselines.lstm_hidden": 48
+  },
+  {
+   "learner.lr": 0.00222,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "baselines.lstm_hidden": 80
+  },
+  {
+   "learner.lr": 0.000682,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "baselines.lstm_hidden": 64
+  },
+  {
+   "learner.lr": 0.000653,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "baselines.lstm_hidden": 64
+  },
+  {
+   "learner.lr": 0.00134,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "baselines.lstm_hidden": 80
+  },
+  {
+   "learner.lr": 0.0011,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6,
+   "baselines.lstm_hidden": 48
+  },
+  {
+   "learner.lr": 0.0029,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6,
+   "baselines.lstm_hidden": 48
+  },
+  {
+   "learner.lr": 0.000658,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9,
+   "baselines.lstm_hidden": 80
+  },
+  {
+   "learner.lr": 0.000741,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75,
+   "baselines.lstm_hidden": 64
+  },
+  {
+   "learner.lr": 0.000641,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6,
+   "baselines.lstm_hidden": 48
+  }
+ ],
+ "A11": [
+  {
+   "learner.lr": 0.000581,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000545,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00242,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00124,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00123,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.000679,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.0011,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00103,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.0023,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.00196,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00284,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00149,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  }
+ ],
+ "A12": [
+  {
+   "baselines.lookup_ewm": 0.1,
+   "baselines.lookup_f_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "baselines.lookup_ewm": 0.1,
+   "baselines.lookup_f_scale": 1.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "baselines.lookup_ewm": 0.1,
+   "baselines.lookup_f_scale": 0.75,
+   "burst.theta_b": 0.9
+  },
+  {
+   "baselines.lookup_ewm": 0.2,
+   "baselines.lookup_f_scale": 1.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "baselines.lookup_ewm": 0.2,
+   "baselines.lookup_f_scale": 0.75,
+   "burst.theta_b": 0.6
+  },
+  {
+   "baselines.lookup_ewm": 0.2,
+   "baselines.lookup_f_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "baselines.lookup_ewm": 0.1,
+   "baselines.lookup_f_scale": 0.75,
+   "burst.theta_b": 0.6
+  },
+  {
+   "baselines.lookup_ewm": 0.2,
+   "baselines.lookup_f_scale": 0.75,
+   "burst.theta_b": 0.75
+  },
+  {
+   "baselines.lookup_ewm": 0.1,
+   "baselines.lookup_f_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "baselines.lookup_ewm": 0.05,
+   "baselines.lookup_f_scale": 0.75,
+   "burst.theta_b": 0.9
+  },
+  {
+   "baselines.lookup_ewm": 0.05,
+   "baselines.lookup_f_scale": 0.75,
+   "burst.theta_b": 0.6
+  },
+  {
+   "baselines.lookup_ewm": 0.2,
+   "baselines.lookup_f_scale": 1.5,
+   "burst.theta_b": 0.9
+  }
+ ],
+ "A13": [
+  {
+   "learner.lr": 0.000685,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75,
+   "drm.beta_c": 0.1
+  },
+  {
+   "learner.lr": 0.000732,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "drm.beta_c": 0.25
+  },
+  {
+   "learner.lr": 0.00179,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75,
+   "drm.beta_c": 0.1
+  },
+  {
+   "learner.lr": 0.000411,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "drm.beta_c": 0.25
+  },
+  {
+   "learner.lr": 0.00166,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "drm.beta_c": 0.25
+  },
+  {
+   "learner.lr": 0.00294,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "drm.beta_c": 0.5
+  },
+  {
+   "learner.lr": 0.00209,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75,
+   "drm.beta_c": 0.1
+  },
+  {
+   "learner.lr": 0.000535,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9,
+   "drm.beta_c": 0.1
+  },
+  {
+   "learner.lr": 0.00276,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6,
+   "drm.beta_c": 0.25
+  },
+  {
+   "learner.lr": 0.00156,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75,
+   "drm.beta_c": 0.5
+  },
+  {
+   "learner.lr": 0.00189,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75,
+   "drm.beta_c": 0.1
+  },
+  {
+   "learner.lr": 0.000373,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75,
+   "drm.beta_c": 0.25
+  }
+ ],
+ "A14": [
+  {
+   "learner.lr": 0.000392,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000419,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00291,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000511,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00102,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000801,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75
+  },
+  {
+   "learner.lr": 0.000673,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000807,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.00203,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6
+  },
+  {
+   "learner.lr": 0.000868,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00143,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9
+  },
+  {
+   "learner.lr": 0.00191,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9
+  }
+ ],
+ "B_ZHOU": [
+  {}
+ ],
+ "B_QIN": [
+  {}
+ ],
+ "B_HUANG": [
+  {
+   "learner.lr": 0.00174,
+   "learner.update_every": 4
+  },
+  {
+   "learner.lr": 0.00256,
+   "learner.update_every": 8
+  },
+  {
+   "learner.lr": 0.000549,
+   "learner.update_every": 2
+  },
+  {
+   "learner.lr": 0.000438,
+   "learner.update_every": 2
+  },
+  {
+   "learner.lr": 0.00161,
+   "learner.update_every": 2
+  },
+  {
+   "learner.lr": 0.00109,
+   "learner.update_every": 8
+  },
+  {
+   "learner.lr": 0.000343,
+   "learner.update_every": 8
+  },
+  {
+   "learner.lr": 0.000614,
+   "learner.update_every": 4
+  },
+  {
+   "learner.lr": 0.00283,
+   "learner.update_every": 2
+  },
+  {
+   "learner.lr": 0.000314,
+   "learner.update_every": 8
+  },
+  {
+   "learner.lr": 0.00058,
+   "learner.update_every": 4
+  },
+  {
+   "learner.lr": 0.000317,
+   "learner.update_every": 8
+  }
+ ],
+ "B_SONG": [
+  {
+   "baselines.es_sigma": 0.027,
+   "baselines.es_lr": 0.00342
+  },
+  {
+   "baselines.es_sigma": 0.0419,
+   "baselines.es_lr": 0.0395
+  },
+  {
+   "baselines.es_sigma": 0.00616,
+   "baselines.es_lr": 0.00245
+  },
+  {
+   "baselines.es_sigma": 0.00534,
+   "baselines.es_lr": 0.00599
+  },
+  {
+   "baselines.es_sigma": 0.0304,
+   "baselines.es_lr": 0.0193
+  },
+  {
+   "baselines.es_sigma": 0.0317,
+   "baselines.es_lr": 0.00905
+  },
+  {
+   "baselines.es_sigma": 0.0461,
+   "baselines.es_lr": 0.0043
+  },
+  {
+   "baselines.es_sigma": 0.0359,
+   "baselines.es_lr": 0.0282
+  },
+  {
+   "baselines.es_sigma": 0.00681,
+   "baselines.es_lr": 0.0237
+  },
+  {
+   "baselines.es_sigma": 0.0072,
+   "baselines.es_lr": 0.0274
+  },
+  {
+   "baselines.es_sigma": 0.0266,
+   "baselines.es_lr": 0.0239
+  },
+  {
+   "baselines.es_sigma": 0.0252,
+   "baselines.es_lr": 0.0108
+  }
+ ],
+ "A16": [
+  {
+   "learner.lr": 0.000955,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.00187,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.6,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.00233,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 900
+  },
+  {
+   "learner.lr": 0.000503,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.00214,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.00064,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 900
+  },
+  {
+   "learner.lr": 0.000856,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.000614,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.00166,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.75,
+   "memory.delay_slots": 900
+  },
+  {
+   "learner.lr": 0.00056,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.000964,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.000495,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 900
+  }
+ ],
+ "A16P": [
+  {
+   "learner.lr": 0.000937,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.000742,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.000571,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 900
+  },
+  {
+   "learner.lr": 0.0019,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.000553,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.75,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.00172,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 900
+  },
+  {
+   "learner.lr": 0.000629,
+   "learner.update_every": 2,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.000767,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.6,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.00278,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 0.25,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 900
+  },
+  {
+   "learner.lr": 0.000813,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.9,
+   "memory.delay_slots": 100
+  },
+  {
+   "learner.lr": 0.000383,
+   "learner.update_every": 4,
+   "learner.target_entropy_scale": 0.5,
+   "burst.theta_b": 0.75,
+   "memory.delay_slots": 300
+  },
+  {
+   "learner.lr": 0.000415,
+   "learner.update_every": 8,
+   "learner.target_entropy_scale": 1.0,
+   "burst.theta_b": 0.6,
+   "memory.delay_slots": 900
+  }
+ ]
+}

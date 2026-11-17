@@ -1,0 +1,102 @@
+{
+ "A0": {
+  "learner.lr": 0.00239,
+  "learner.update_every": 8,
+  "learner.target_entropy_scale": 0.25,
+  "burst.theta_b": 0.9
+ },
+ "A1": {
+  "learner.lr": 0.00133,
+  "learner.update_every": 2,
+  "learner.target_entropy_scale": 0.25,
+  "burst.theta_b": 0.6
+ },
+ "A2": {
+  "learner.lr": 0.00234,
+  "learner.update_every": 4,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.6
+ },
+ "A3": {
+  "learner.lr": 0.000734,
+  "learner.update_every": 8,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.6
+ },
+ "A4": {
+  "learner.lr": 0.000474,
+  "learner.update_every": 2,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.9
+ },
+ "A5": {
+  "learner.lr": 0.000589,
+  "learner.update_every": 4,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.75
+ },
+ "A6": {
+  "learner.lr": 0.00111,
+  "learner.update_every": 4,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.75
+ },
+ "A7": {
+  "learner.lr": 0.00175,
+  "learner.update_every": 8,
+  "learner.target_entropy_scale": 0.25,
+  "burst.theta_b": 0.9
+ },
+ "A8": {
+  "learner.lr": 0.0028,
+  "learner.update_every": 8,
+  "learner.target_entropy_scale": 0.25
+ },
+ "A9": {
+  "learner.lr": 0.000354,
+  "learner.update_every": 4,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.75
+ },
+ "A10": {
+  "learner.lr": 0.00141,
+  "learner.update_every": 4,
+  "learner.target_entropy_scale": 0.5,
+  "burst.theta_b": 0.75,
+  "baselines.lstm_hidden": 48
+ },
+ "A11": {
+  "learner.lr": 0.000581,
+  "learner.update_every": 2,
+  "learner.target_entropy_scale": 0.5,
+  "burst.theta_b": 0.9
+ },
+ "A12": {
+  "baselines.lookup_ewm": 0.1,
+  "baselines.lookup_f_scale": 1.0,
+  "burst.theta_b": 0.9
+ },
+ "A13": {
+  "learner.lr": 0.00179,
+  "learner.update_every": 8,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.75,
+  "drm.beta_c": 0.1
+ },
+ "A14": {
+  "learner.lr": 0.00102,
+  "learner.update_every": 2,
+  "learner.target_entropy_scale": 1.0,
+  "burst.theta_b": 0.75
+ },
+ "B_HUANG": {
+  "learner.lr": 0.000549,
+  "learner.update_every": 2
+ },
+ "B_SONG": {
+  "baselines.es_sigma": 0.00534,
+  "baselines.es_lr": 0.00599
+ },
+ "B_ZHOU": {},
+ "B_QIN": {}
+}
